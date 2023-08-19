@@ -52,3 +52,9 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 [7] [KL散度和交叉熵的对比介绍](https://baijiahao.baidu.com/s?id=1763841223452070719)
 
 [8] [sunzeyeah/RLHF](https://github.com/sunzeyeah/RLHF)
+
+[9] [DeepSpeed Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales](https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat)
+
+[10] [microsoft/DeepSpeedExamples](https://github.com/microsoft/DeepSpeedExamples)
+
+[11] [🐕DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales🐕](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
