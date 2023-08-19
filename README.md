@@ -1,20 +1,4 @@
-# DeepSpeed Examples
-This repository contains various examples including training, inference, compression, benchmarks, and applications that use [DeepSpeed](https://github.com/microsoft/DeepSpeed).
-
-## 1. Applications
-This folder contains end-to-end applications that use DeepSpeed to train and use cutting-edge models.
-
-## 2. Training
-There are several training and finetuning examples so please see the individual folders for specific instructions.
-
-## 3. Inference
-The DeepSpeed Huggingface inference [README](./inference/huggingface/README.md) explains how to get started with running DeepSpeed Huggingface inference examples.
-
-## 4. Compression
-Model compression examples.
-
-## 5. Benchmarks
-All benchmarks that use the DeepSpeed library are maintained in this folder.
+# simple-rlhf
 
 # Build Pipeline Status
 | Description | Status |
