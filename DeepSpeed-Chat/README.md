@@ -1,8 +1,6 @@
-## ☕ Quick Start ☕
+## ☕ 快速开始 ☕
 
-
-### 🐼 Installation
-
+### 🐼 安装
 
 ```bash
 pip install deepspeed>=0.9.0
@@ -12,20 +10,17 @@ cd DeepSpeedExamples/applications/DeepSpeed-Chat/
 pip install -r requirements.txt
 ```
 
-### 🐼 One Single Script Completes All Three Steps of RLHF Training and Generate Your First ChatGPT Model
+### 🐼 一个脚本完成 RLHF 训练的所有三个步骤并生成您的第一个 ChatGPT 模型
 
 
-&nbsp;&nbsp;**:yellow_heart: DeepSpeed-Chat’s RLHF Example 1: Coffee Time Training for a 1.3B ChatGPT Model**
+&nbsp;&nbsp;**:yellow_heart: Coffee Time Training for a 1.3B ChatGPT Model**
 
 
 <details><summary> Expand </summary><p>
-If you only have around **1-2 hour** for coffee or lunch break, you can also try to train a small/toy model with DeepSpeed-Chat. For example, we prepared a training example for a **1.3B** model with a single dataset to test our framework on your consumer-grade GPUs. The best part is that you will have your model checkpoint ready to play with when you are back from your lunch break!
 
   ```bash
   python train.py --actor-model facebook/opt-1.3b --reward-model facebook/opt-350m --deployment-type single_gpu
   ```
-
-  See the following table for the E2E time breakdown for training a 1.3 billion parameter ChatGPT model via DeepSpeed-Chat on a single commodity NVIDIA A6000 GPU with 48GB memory.
 
   | Model Size (A6000-48G)            | Step 1  | Step 2  | Step 3 | Total  |
   | --------------------------------- | ------- | ------- | ------ | ------ |
@@ -33,45 +28,19 @@ If you only have around **1-2 hour** for coffee or lunch break, you can also try
 
  </p></details>
 
-
-
-&nbsp;&nbsp;**:green_heart: DeepSpeed-Chat’s RLHF Example 2: Half Day Training on a Single Commodity GPU Node for a 13B ChatGPT Model**
+&nbsp;&nbsp;**:green_heart: Half Day Training on a Single Commodity GPU Node for a 13B ChatGPT Model**
 
 <details><summary> Expand </summary><p>
-
-If you only have around **half a day** and only a single server node, we suggest to use an example of pretrained **OPT-13B** as the actor model and OPT-350M as the reward model in the following single script to generate a final 13B ChatGPT-style model:
 
   ```bash
   python train.py --actor-model facebook/opt-13b --reward-model facebook/opt-350m --deployment-type single_node
   ```
-
-  See the following table for the E2E time breakdown for training a 13 billion parameter ChatGPT model via DeepSpeed-Chat on a single DGX node with 8 NVIDIA A100-40G GPUs.
 
   | Model Size (A100-40G)          | Step 1 | Step 2 | Step 3 | Total  |
   | ------------------------------- | ------ | ------ | ------ | ------ |
   | Actor: OPT-13B Reward: OPT-350M | 2.5hr  | 0.25hr | 10.8hr | 13.6hr |
 
 </p></details>
-
-
-&nbsp;&nbsp;**:blue_heart: DeepSpeed-Chat’s RLHF Example 3: Low-Budget Cloud Training for a Larger 66B ChatGPT Model**
-
-<details><summary> Expand </summary><p>
-
-Want to try different model sizes and configurations? You got it! With DeepSpeed-Chat, users can easily do that. For example, if you have access to multi-nodes cluster or cloud resources and prefer to train a larger and higher-quality model for your research or business, you can simply use a similar script with your desired model sizes, e.g., **66B** and GPU counts=64:
-
-  ```bash
-  python train.py --actor-model facebook/opt-66b --reward-model facebook/opt-350m --deployment-type multi_node
-  ```
-
-  See the following table for E2E time breakdown for training a 66 billion parameter ChatGPT model via DeepSpeed-Chat on 8 DGX nodes with 8 NVIDIA A100-80G GPUs/node.
-
-  | Model Size (A100-80g)            | Step 1 | Step 2 | Step 3 | Total |
-  | -------------------------------- | ------ | ------ | ------ | ----- |
-  | Actor: OPT-66B  Reward: OPT-350M | 82mins | 5mins  | 7.5hr  | 9hr   |
- </p></details>
-
- For your detailed budgeting for training a wide spectrum of model sizes on potentially available computing resources (e.g., Microsoft Azure), please visit [Training Performance Evaluation](#-training-performance-evaluation-).
 
 ### 🐼 Demonstration: Individual Step Fine-Tuning
 
