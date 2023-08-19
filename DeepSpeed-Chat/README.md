@@ -3,11 +3,12 @@
 ### 🐼 安装
 
 ```bash
-pip install deepspeed>=0.9.0
-
-git clone https://github.com/microsoft/DeepSpeedExamples.git
-cd DeepSpeedExamples/applications/DeepSpeed-Chat/
-pip install -r requirements.txt
+python -m venv env
+source env/bin/activate
+which python
+pip install --upgrade pip
+cd DeepSpeed-Chat/
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ### 🐼 一个脚本完成 RLHF 训练的所有三个步骤并生成您的第一个 ChatGPT 模型
