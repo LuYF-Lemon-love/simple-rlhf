@@ -161,35 +161,6 @@ python chat.py --path  ${PATH-to-your-actor-model}
 <img src="assets/image/ds-chat.gif" alt="DeepSpeed Chat Gif"/>
 </div>
 
-
-## 🔥 Training Performance Evaluation 🔥
-
-### 🐲 Superior Model Scale and Low Training Cost
-
-A comprehensive view of the scale and end-to-end training times enabled by DeepSpeed-RLHF system are presented in Table 1. It also demonstrates the most cost-effective way to train models in Azure Cloud along with the associated cost.
-
-
-| GPU SKUs      | OPT-1.3B      | OPT-6.7B       | OPT-13.2B       | OPT-30B       | OPT-66B           | OPT-175B      |
-|---------------|---------------|----------------|-----------------|---------------|-------------------|-----------------|
-| 1x V100 32G   | 1.8 days      |                |                 |               |                   |                 |
-| 1x A6000 48G  | 1.1 days      | 5.6 days       |                 |               |                   |                 |
-| 1x A100 40G   | 15.4 hrs      | 3.4 days       |                 |               |                   |                 |
-| 1x A100 80G   | 11.7 hrs      | 1.7 days       | 4.9 days        |               |                   |                 |
-| 8x A100 40G   | 2 hrs         | 5.7 hrs        | 10.8 hrs        | 1.85 days     |                   |                 |
-| 8x A100 80G   | 1.4 hrs($45)  | 4.1 hrs ($132) | 9 hrs ($290)    | 18 hrs ($580) | 2.1 days ($1620)  |                 |
-| 64x A100 80G  | 31 minutes    | 51 minutes     | 1.25 hrs ($320) | 4 hrs ($1024) | 7.5 hrs ($1920)    | 20 hrs ($5120) |
-<p align="center">
-Table 1. End-to-end RLHF training (Step 3) for different actor model sizes and a fixed 350M critical model running on hardware ranging from single consumer grade GPU (NVIDIA A6000) to a more powerful cloud setup (64xA100-80GPUs).  
-</p>
-
-<details><summary> ⭕ Very Important Experimental Setup Details ⭕</summary><p>
-
-The numbers in the table above are for Stage 3 of the training and based on actual measured training throughput on DeepSpeed-RLHF curated dataset and training recipe which trains for one epoch on a total of 135M tokens (6 open-sourced datasets with 40% used for RLHF training stage, i.e., Dahoas/rm-static, Dahoas/full-hh-rlhf, Dahoas/synthetic-instruct-gptj-pairwise, yitingxie/rlhf-reward-datasets, openai/webgpt_comparisons, and stanfordnlp/SHP from Huggingface Datasets. More specifically, we have in total 67.5M query tokens (131.9k queries with sequence length 256) and 67.5M generated tokens (131.9k answers with sequence length 256), and a maximum global batch size per step of 0.5M tokens (1024 query-answer pairs). We urge readers to pay attention to these specifications before making any cost and e2e time comparisons with DeepSpeed-RLHF.
-
- </p></details>
-
-
-
 ### 🐲 Throughput and Model Size Scalability Comparisons with Existing RLHF Systems
 
 &nbsp;&nbsp;***(I) Single-GPU's Model Scale and Throughput Comparison***
