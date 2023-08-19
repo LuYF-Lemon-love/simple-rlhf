@@ -161,44 +161,6 @@ python chat.py --path  ${PATH-to-your-actor-model}
 <img src="assets/image/ds-chat.gif" alt="DeepSpeed Chat Gif"/>
 </div>
 
-### 🐲 Throughput and Model Size Scalability Comparisons with Existing RLHF Systems
-
-&nbsp;&nbsp;***(I) Single-GPU's Model Scale and Throughput Comparison***
-
-&nbsp;&nbsp;With over an order of magnitude higher throughput, DeepSpeed-Chat unlocks the ability to train significantly larger actor models under the same latency budget or train models of similar size at much lower cost, compared to the existing systems like Colossal-AI or HuggingFace-DDP. For example, on a single GPU, DeepSpeed enables over **10X** throughput improvement for RLHF training on a single GPU. While both CAI-Coati and HF-DDP can run a max model size of 1.3B, DeepSpeed can run 6.5B model on the same hardware, **5x** higher.  
-
-<p align="center">
-
-<img src="assets/image/democrat2.png" alt="democratization"/>
-Figure 2: Step 3 throughput comparison against two other system frameworks (Colossal AI's Coati and Huggingface-DDP) for accelerating RLHF training on a single NVIDIA A100-40G commodity GPU. No icons represent OOM scenarios.  
-
-</p>
-
-&nbsp;&nbsp;***(II) Single-Node Multi-GPU Model Scale and Throughput Comparison***
-
-On multi-GPUs of a single node, DeepSpeed-Chat enables **6-19X** speedup over CAI-Coati and **1.4-10.5X** speedup over HF-DDP (Figure 3) with respect to system throughput.  
-
-<p align="center">
-
-<img src="assets/image/e2e_RLHF.png" alt="democratization"/>
-Figure 3. End-to-end training throughput comparison for step 3 of the training pipeline (the most time consuming portion) with different model sizes on a single DGX node equipped with 8 NVIDIA A100-40G GPUs. No icons represent OOM scenarios.  
-
-</p>
-
-&nbsp;&nbsp;***(III) Superior Generation Phase Acceleration in Step3***
-
-One of the key reasons that result in Figure 3 is our Hybrid Engine's superior generation phase acceleration, shown below.
-
-<p align="center">
-
-<img src="assets/image/1.3B-breakdown.png" alt="democratization"/>
-
-Figure 4. Superior generation phase acceleration from DeepSpeed Chat’s Hybrid Engine: A time/sequence breakdown for training OPT-1.3B actor model + OPT-350M reward model on a single DGX node with 8 A100-40G GPUs.
-
-</p>
-
-For other detailed results and in-depth analysis, including effective throughput and scalability of DeepSpeed-Chat, please refer to our [Blog Post](https://github.com/microsoft/DeepSpeed/tree/master/blogs/deepspeed-chat).
-
 ## 😽 Supported Models 😽
 
 
