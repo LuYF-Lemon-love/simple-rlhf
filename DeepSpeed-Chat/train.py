@@ -1,7 +1,12 @@
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/train.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+#
+# 训练脚本.
 
-# DeepSpeed Team
 """
 Run all steps with default settings:
 $ python3 train.py
@@ -41,7 +46,6 @@ step_dirs = {
 }
 model_type = {1: "actor", 2: "reward", 3: "step3"}
 dse_url = "https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat/"
-
 
 def parse_args():
     parser = argparse.ArgumentParser()
