@@ -161,51 +161,6 @@ python chat.py --path  ${PATH-to-your-actor-model}
 <img src="assets/image/ds-chat.gif" alt="DeepSpeed Chat Gif"/>
 </div>
 
-## 😽 Supported Models 😽
-
-
-
-Currently, we support the following model families. We will continue to grow over time to including emerging models for ChatGPT-style training! See [Roadmap](#-deepspeed-chats-roadmap-) for more details.
-
-model family | size range
------- | ------
-[opt](https://huggingface.co/models?other=opt) | 0.1B - 66B
-[bloom](https://huggingface.co/models?other=bloom) | 0.3B - 176B
-[gpt\_neox](https://huggingface.co/models?other=gpt_neox) | 1.3B - 20B
-[gptj](https://huggingface.co/models?other=gptj) | 1.4B - 6B
-[gpt\_neo](https://huggingface.co/models?other=gpt_neo) | 0.1B - 2.7B
-[gpt2](https://huggingface.co/models?other=gpt2) | 0.3B - 1.5B
-[codegen](https://huggingface.co/Salesforce/codegen-16B-multi) | 0.35b - 16B
-
-* All performance and accuracy tests have been performed using the OPT model family only. For other models, please see our training_scripts folder on how to change model families.
-
-
-## 🔬 Build Pipeline Status 🔬
-
-| Description | Status |
-| ----------- | ------ |
-| Integrations | [![nv-ds-chat](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-ds-chat.yml/badge.svg?branch=master)](https://github.com/microsoft/DeepSpeed/actions/workflows/nv-ds-chat.yml) |
-
-A DeepSpeed CI workflow runs the DeepSpeed-Chat Step 3 pipeline nightly across the following test configurations:
-
-Models
-```
-Actor:  facebook/opt-125m
-Critic: facebook/opt-125m (trained in DS-Chat Step 2)
-```
-
-Parameters comprising test matrix
-```
-Zero Stage:    2, 3
-Hybrid Engine: True, False
-Offload:       True, False
-LoRA:          True, False
-```
-
-Each configuration (16 total) runs through a limited number of Step 3 non-overflow training steps (i.e. steps where neither actor nor critic overflow) and saves the actor/critic models.
-Assertions are used to check if the training pipeline executed correctly and if the actor and critic models were saved properly.
-
-
 ## ⚓ Documentation and Tutorial ⚓
 
 For more APIs, example scripts, and evaluation results, please refer to
