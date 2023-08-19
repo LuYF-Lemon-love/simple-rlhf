@@ -42,9 +42,7 @@ pip install -r requirements.txt
 
 </p></details>
 
-### 🐼 Demonstration: Individual Step Fine-Tuning
-
-The train.py script has an easy-to-use command-line interface and can be launched with several arguments including model type, model size, and number of GPUs to run. Considering users who would like to use DeepSpeed-Chat to only fine-tune their pretrained models in Step 1 or 2, or just use their own actor and reward model checkpoints directly to perform Step 3 in our RLHF pipeline, DeepSpeed-Chat provides greater configurability and flexibility to accommodate individual step fine-tuning:
+### 🐼 演示：单个步骤微调
 
 #### 🕐 Step 1 - [Supervised Fine-Tuning](./training/step1_supervised_finetuning)
 
@@ -90,8 +88,6 @@ Figure 1: The illustration of DeepSpeed Chat’s RLHF training pipeline with opt
 
 
 </p>
-
-As the most complex step of the entire 3-step InstructGPT pipeline, DeepSpeed Chat's ***Hybrid Engine*** has enabled sufficient acceleration to avoid large training time (cost) implications. Refer to [Step3: Reinforcement Learning Human Feedback (RLHF)](./training/step3_rlhf_finetuning) for more information. If you already have your fine-tuned actor and reward model checkpoints, you can simply run the following scripts to enable the PPO training.
 
 <details><summary> Expand </summary><p>
 
