@@ -35,3 +35,13 @@
 [16] [Shell脚本](https://blog.csdn.net/weixin_44689630/article/details/120615238)
 
 [17] [shell脚本语言(超全超详细)](https://blog.csdn.net/weixin_43288201/article/details/105643692)
+
+[18] [www.deepspeed.ai/getting-started/](https://www.deepspeed.ai/getting-started/)
+
+[19] [deepspeed.add_config_arguments](https://deepspeed.readthedocs.io/en/latest/initialize.html#deepspeed.add_config_arguments)
+
+[20] [argparse.html#required](https://docs.python.org/zh-cn/3/library/argparse.html#required)
+
+[21] [pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)
+
+[22] [os.pardir](https://docs.python.org/zh-cn/3/library/os.html#os.pardir)
