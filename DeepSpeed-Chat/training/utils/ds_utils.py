@@ -1,13 +1,16 @@
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
-
-# DeepSpeed Team
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/utils/ds_utils.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
+#
+# 配置工具.
 
 import torch
 
 GLOBAL_BATCH_SIZE = 32
 MICRO_BATCH_SIZE = 4
-
 
 def get_train_ds_config(offload,
                         stage=2,
