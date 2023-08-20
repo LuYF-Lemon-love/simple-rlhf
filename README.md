@@ -57,3 +57,13 @@
 [27] [torch.utils.data.Subset](https://pytorch.org/docs/stable/data.html#torch.utils.data.Subset)
 
 [28] [torch.distributed.all_reduce](https://pytorch.org/docs/stable/distributed.html?highlight=torch+distributed+all_reduce#torch.distributed.all_reduce)
+
+[29] [NLP 之 Perplexity困惑度](https://blog.csdn.net/hxxjxw/article/details/113901476)
+
+[30] [困惑度(perplexity)的基本概念及多种模型下的计算（N-gram, 主题模型, 神经网络）](https://zhuanlan.zhihu.com/p/114432097)
+
+[31] [gradient_checkpointing_enable](https://huggingface.co/docs/transformers/v4.31.0/en/main_classes/model#transformers.PreTrainedModel.gradient_checkpointing_enable)
+
+[32] [Causal language modeling](https://huggingface.co/docs/transformers/tasks/language_modeling)
+
+[33] [deepspeed.ops.adam.DeepSpeedCPUAdam](https://deepspeed.readthedocs.io/en/latest/optimizers.html#deepspeed.ops.adam.DeepSpeedCPUAdam)
