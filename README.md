@@ -2,7 +2,7 @@
 
 ## 参考
 
-<details><summary> Expand </summary><p>
+<details><summary> 展开 </summary><p>
 
 [1] [ChatGPT 背后的“功臣”——RLHF 技术详解](https://huggingface.co/blog/zh/rlhf)
 
