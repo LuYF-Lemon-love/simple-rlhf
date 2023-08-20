@@ -49,3 +49,11 @@
 [23] [enable_input_require_grads](https://github.com/huggingface/transformers/blob/v4.31.0/src/transformers/modeling_utils.py#L1197)
 
 [24] [torch.nn.functional.linear](https://pytorch.org/docs/stable/generated/torch.nn.functional.linear.html#torch.nn.functional.linear)
+
+[25] [quicktour#autotokenizer](https://huggingface.co/docs/transformers/quicktour#autotokenizer)
+
+[26] [numpy.save](https://numpy.org/doc/stable/reference/generated/numpy.save.html#numpy.save)
+
+[27] [torch.utils.data.Subset](https://pytorch.org/docs/stable/data.html#torch.utils.data.Subset)
+
+[28] [torch.distributed.all_reduce](https://pytorch.org/docs/stable/distributed.html?highlight=torch+distributed+all_reduce#torch.distributed.all_reduce)
