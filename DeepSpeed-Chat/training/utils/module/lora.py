@@ -1,14 +1,18 @@
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/utils/module/lora.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
+#
+# 训练脚本.
 
-# DeepSpeed Team
 import math
 import torch
 from torch import nn
 import torch.nn.functional as F
 from deepspeed.compression.helper import recursive_getattr, recursive_setattr
 import deepspeed
-
 
 class LinearLayer_LoRA(nn.Module):
     # an simple implementation of LoRA
