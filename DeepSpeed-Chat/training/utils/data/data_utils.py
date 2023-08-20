@@ -1,7 +1,12 @@
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/utils/data/data_utils.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
+#
+# 加载数据.
 
-# DeepSpeed Team
 """
 Part of the code was adopted from https://github.com/microsoft/Megatron-DeepSpeed/blob/main/megatron/data/dataset_utils.py
 """
