@@ -1,7 +1,12 @@
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/utils/model/model_utils.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
+#
+# 加载模型常用工具.
 
-# DeepSpeed Team
 import os
 import math
 import torch
