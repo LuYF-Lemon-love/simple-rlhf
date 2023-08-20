@@ -27,7 +27,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
   | --------------------------------- | ------- | ------- | ------ | ------ |
   | Actor: OPT-1.3B  Reward: OPT-350M | 2900 Sec | 670 Sec | 1.2hr | 2.2hr |
 
- </p></details>
+</p></details>
 
 &nbsp;&nbsp;**:green_heart: Half Day Training on a Single Commodity GPU Node for a 13B ChatGPT Model**
 
