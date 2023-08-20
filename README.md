@@ -45,3 +45,7 @@
 [21] [pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)
 
 [22] [os.pardir](https://docs.python.org/zh-cn/3/library/os.html#os.pardir)
+
+[23] [enable_input_require_grads](https://github.com/huggingface/transformers/blob/v4.31.0/src/transformers/modeling_utils.py#L1197)
+
+[24] [torch.nn.functional.linear](https://pytorch.org/docs/stable/generated/torch.nn.functional.linear.html#torch.nn.functional.linear)
