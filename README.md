@@ -23,3 +23,11 @@
 [10] [microsoft/DeepSpeedExamples](https://github.com/microsoft/DeepSpeedExamples)
 
 [11] [🐕DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales🐕](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
+
+[12] [argparse.html#nargs](https://docs.python.org/zh-cn/3/library/argparse.html#nargs)
+
+[13] [timedelta 类对象](https://docs.python.org/zh-cn/3/library/datetime.html#datetime.timedelta)
+
+[14] [subprocess.Popen](https://docs.python.org/zh-cn/3/library/subprocess.html#subprocess.Popen)
+
+[15] [Popen.wait](https://docs.python.org/zh-cn/3/library/subprocess.html#subprocess.Popen.wait)
