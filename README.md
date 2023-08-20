@@ -31,3 +31,7 @@
 [14] [subprocess.Popen](https://docs.python.org/zh-cn/3/library/subprocess.html#subprocess.Popen)
 
 [15] [Popen.wait](https://docs.python.org/zh-cn/3/library/subprocess.html#subprocess.Popen.wait)
+
+[16] [Shell脚本](https://blog.csdn.net/weixin_44689630/article/details/120615238)
+
+[17] [shell脚本语言(超全超详细)](https://blog.csdn.net/weixin_43288201/article/details/105643692)
