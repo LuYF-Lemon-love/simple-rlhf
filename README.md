@@ -2,6 +2,8 @@
 
 ## 参考
 
+<details><summary> Expand </summary><p>
+
 [1] [ChatGPT 背后的“功臣”——RLHF 技术详解](https://huggingface.co/blog/zh/rlhf)
 
 [2] [ChatGPT技术解析系列之：训练框架InstructGPT](https://zhuanlan.zhihu.com/p/605516116)
@@ -67,3 +69,5 @@
 [32] [Causal language modeling](https://huggingface.co/docs/transformers/tasks/language_modeling)
 
 [33] [deepspeed.ops.adam.DeepSpeedCPUAdam](https://deepspeed.readthedocs.io/en/latest/optimizers.html#deepspeed.ops.adam.DeepSpeedCPUAdam)
+
+</p></details>
