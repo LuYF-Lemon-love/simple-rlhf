@@ -125,4 +125,12 @@ $ source ~/.bashrc
 
   [45] [language_modeling](https://huggingface.co/docs/transformers/main/en/tasks/language_modeling)
 
+  [46] [Efficient Training on a Single GPU](https://huggingface.co/docs/transformers/v4.31.0/en/perf_train_gpu_one#using-accelerate)
+
+  [47] [GPT2Model](https://github.com/huggingface/transformers/blob/v4.31.0/src/transformers/models/gpt2/modeling_gpt2.py#L670)
+
+  [48] [torch.nn.functional.logsigmoid](https://pytorch.org/docs/stable/generated/torch.nn.functional.logsigmoid.html#torch.nn.functional.logsigmoid)
+
+  [47] [model.tput_timer.update_epoch_count](https://zhuanlan.zhihu.com/p/641675229)
+
 </p></details>
