@@ -134,3 +134,4 @@ dmypy.json
 DeepSpeed-Chat/output
 DeepSpeed-Chat/rm-static
 DeepSpeed-Chat/opt-1.3b
+DeepSpeed-Chat/training/step1_supervised_finetuning/output

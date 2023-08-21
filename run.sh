@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "修改代码"
+git commit -m "运行代码"
 git push
