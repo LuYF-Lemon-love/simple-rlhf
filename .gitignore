@@ -131,8 +131,9 @@ dmypy.json
 .pyre/
 
 # added by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
-DeepSpeed-Chat/output
 DeepSpeed-Chat/rm-static
 DeepSpeed-Chat/opt-350m
 DeepSpeed-Chat/opt-1.3b
+DeepSpeed-Chat/output
 DeepSpeed-Chat/training/step1_supervised_finetuning/output
+DeepSpeed-Chat/training/step2_reward_model_finetuning/output
