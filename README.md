@@ -25,6 +25,8 @@ $ source ~/.bashrc
 
 [1] [facebook/opt-1.3b](https://huggingface.co/facebook/opt-1.3b)
 
+[2] [facebook/opt-350m](https://huggingface.co/facebook/opt-350m)
+
 ## 数据
 
 [1] [Dahoas/rm-static](https://huggingface.co/datasets/Dahoas/rm-static)
