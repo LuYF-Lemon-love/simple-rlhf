@@ -1,7 +1,12 @@
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/step1_supervised_finetuning/prompt_eval.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 21, 2023
+#
+# 评估脚本.
 
-# DeepSpeed Team
 import argparse
 import logging
 import torch
@@ -17,7 +22,6 @@ from utils.model.model_utils import create_hf_model
 from utils.utils import load_hf_tokenizer
 
 logger = logging.getLogger(__name__)
-
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Eval the finetued SFT model")
