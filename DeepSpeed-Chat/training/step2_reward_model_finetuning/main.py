@@ -1,13 +1,16 @@
-#!/usr/bin/env python
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/step2_reward_model_finetuning/main.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 21, 2023
+#
+# 训练脚本.
 
-# DeepSpeed Team
 import argparse
 import os
 import math
 import sys
-
 import torch
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from torch.utils.data.distributed import DistributedSampler
