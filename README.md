@@ -70,4 +70,10 @@
   
   [33] [deepspeed.ops.adam.DeepSpeedCPUAdam](https://deepspeed.readthedocs.io/en/latest/optimizers.html#deepspeed.ops.adam.DeepSpeedCPUAdam)
 
+  [34] [HuggingFace.co资源下载网站](https://aliendao.cn/)
+
+  [35] [installation#offline-mode](https://huggingface.co/docs/transformers/v4.31.0/en/installation#offline-mode)
+
+  [36] [Download files from the Hub](https://huggingface.co/docs/huggingface_hub/v0.16.3/guides/download)
+
 </p></details>
