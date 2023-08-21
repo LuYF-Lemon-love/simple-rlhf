@@ -117,4 +117,10 @@ $ source ~/.bashrc
 
   [42] [nvcc -v报错nvcc fatal : No input files specified； use option --help for more information](https://blog.csdn.net/qq_44849479/article/details/117855613)
 
+  [43] [transformers.GenerationMixin.generate](https://huggingface.co/docs/transformers/main/en/main_classes/text_generation#transformers.GenerationMixin.generate)
+
+  [44] [generation_strategies](https://huggingface.co/docs/transformers/main/en/generation_strategies)
+
+  [45] [language_modeling](https://huggingface.co/docs/transformers/main/en/tasks/language_modeling)
+
 </p></details>
