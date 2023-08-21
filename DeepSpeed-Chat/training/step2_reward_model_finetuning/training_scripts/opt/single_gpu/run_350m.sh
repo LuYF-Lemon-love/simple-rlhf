@@ -1,8 +1,12 @@
 #!/bin/bash
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+#
+# DeepSpeed-Chat/training/step2_reward_model_finetuning/training_scripts/opt/single_gpu/run_350m.sh
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
+#
+# 训练脚本.
 
-# DeepSpeed Team
 OUTPUT=$1
 ZERO_STAGE=$2
 if [ "$OUTPUT" == "" ]; then
