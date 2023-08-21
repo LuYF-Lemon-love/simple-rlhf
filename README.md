@@ -2,6 +2,8 @@
 
 ## 环境要求
 
+显卡为: NVIDIA GeForce RTX 4090
+
 ```shell
 $ nvcc -V
 nvcc: NVIDIA (R) Cuda compiler driver
