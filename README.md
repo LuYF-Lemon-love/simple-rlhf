@@ -1,5 +1,13 @@
 # simple-rlhf
 
+## 模型
+
+[1] [facebook/opt-1.3b](https://huggingface.co/facebook/opt-1.3b)
+
+## 数据
+
+[1] [Dahoas/rm-static](https://huggingface.co/datasets/Dahoas/rm-static)
+
 ## 参考
 
 <details><summary> 展开 </summary><p>
