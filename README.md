@@ -84,4 +84,16 @@
 
   [36] [Download files from the Hub](https://huggingface.co/docs/huggingface_hub/v0.16.3/guides/download)
 
+  [37] [nvcc fatal: Unsupported gpu architecture when compile fused_adam](https://github.com/microsoft/DeepSpeedExamples/issues/634)
+
+  [38] [报错解决：RuntimeError: Error compiling objects for extension和nvcc fatal: Unsupported gpu architecture](https://blog.csdn.net/weixin_43603658/article/details/131271511)
+
+  [39] [报错解决：RuntimeError:The detected CUDA version mismatches the version that was used to compile PyTorch.](https://blog.csdn.net/weixin_43603658/article/details/130737155)
+
+  [40] [超详细教程——Ubuntu20.04 安装英伟达NVIDIA显卡驱动、CUDA、Cmake以及不同版本的CUDA切换](https://blog.csdn.net/m0_73860872/article/details/127276979)
+
+  [41] [[解決方案] conda 虚拟环境中 cuda不同版本進行切換（含Linux 和 Windows）](https://blog.csdn.net/weixin_43305485/article/details/130413708)
+
+  [42] [nvcc -v报错nvcc fatal : No input files specified； use option --help for more information](https://blog.csdn.net/qq_44849479/article/details/117855613)
+
 </p></details>
