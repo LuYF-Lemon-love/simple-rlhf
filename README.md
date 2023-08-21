@@ -1,5 +1,16 @@
 # simple-rlhf
 
+## 环境要求
+
+```shell
+$ nvcc -V
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Fri_Jan__6_16:45:21_PST_2023
+Cuda compilation tools, release 12.0, V12.0.140
+Build cuda_12.0.r12.0/compiler.32267302_0
+```
+
 ## 模型
 
 [1] [facebook/opt-1.3b](https://huggingface.co/facebook/opt-1.3b)
