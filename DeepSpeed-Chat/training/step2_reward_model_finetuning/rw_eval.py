@@ -1,12 +1,15 @@
-#!/usr/bin/env python
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/step2_reward_model_finetuning/rw_eval.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 21, 2023
+#
+# 评估脚本.
 
-# DeepSpeed Team
 import argparse
 import os
 import torch
-
 import sys
 
 sys.path.append(
@@ -14,7 +17,6 @@ sys.path.append(
 from utils.model.model_utils import create_critic_model
 from utils.utils import to_device
 from utils.utils import load_hf_tokenizer
-
 
 def parse_args():
     parser = argparse.ArgumentParser(
