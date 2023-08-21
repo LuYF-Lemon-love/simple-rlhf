@@ -132,3 +132,5 @@ dmypy.json
 
 # added by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
 DeepSpeed-Chat/output
+DeepSpeed-Chat/rm-static
+DeepSpeed-Chat/opt-1.3b
