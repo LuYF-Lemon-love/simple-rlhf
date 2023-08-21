@@ -2,7 +2,7 @@
 
 ## 环境要求
 
-显卡为: NVIDIA GeForce RTX 4090
+显卡为：NVIDIA GeForce RTX 4090
 
 ```shell
 $ nvcc -V
@@ -11,6 +11,14 @@ Copyright (c) 2005-2023 NVIDIA Corporation
 Built on Fri_Jan__6_16:45:21_PST_2023
 Cuda compilation tools, release 12.0, V12.0.140
 Build cuda_12.0.r12.0/compiler.32267302_0
+```
+
+切换 CUDA：
+
+```shell
+$ export PATH=/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
+$ export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+$ source ~/.bashrc
 ```
 
 ## 模型
