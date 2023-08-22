@@ -137,3 +137,5 @@ DeepSpeed-Chat/opt-1.3b
 DeepSpeed-Chat/output
 DeepSpeed-Chat/training/step1_supervised_finetuning/output
 DeepSpeed-Chat/training/step2_reward_model_finetuning/output
+DeepSpeed-Chat/training/step3_rlhf_finetuning/output
+DeepSpeed-Chat/training/step3_rlhf_finetuning/step3_tensorboard

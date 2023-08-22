@@ -16,8 +16,8 @@ Build cuda_12.0.r12.0/compiler.32267302_0
 切换 CUDA：
 
 ```shell
-$ export PATH=/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
-$ export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+$ export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
+$ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 $ source ~/.bashrc
 ```
 
