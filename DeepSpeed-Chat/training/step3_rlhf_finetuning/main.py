@@ -1,10 +1,13 @@
-#!/usr/bin/env python
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/step3_rlhf_finetuning/main.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 22, 2023
+#
+# 训练脚本.
 
-# DeepSpeed Team
 """
-
 engine = DeepSpeedRLHFEngine(actor_model_name_or_path=actor_model_name_or_path,
                              critic_model_name_or_path=critic_model_name_or_path,
                              tokenizer=tokenizer,
@@ -14,8 +17,8 @@ trainer = DeepSpeedPPOTrainer(engine=engine, args=args)
 for prompt_batch in prompt_train_dataloader:
     out = trainer.generate_experience(prompt_batch)
     actor_loss, critic_loss = trainer.train_rlhf(out)
-
 """
+
 import argparse
 import os
 import random
@@ -44,7 +47,6 @@ from utils.utils import print_rank_0, to_device, save_hf_format, set_random_seed
 from utils.module.lora import convert_lora_to_linear_layer
 
 writer = None
-
 
 def parse_args():
     global writer
