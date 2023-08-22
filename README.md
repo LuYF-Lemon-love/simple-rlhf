@@ -133,4 +133,18 @@ $ source ~/.bashrc
 
   [47] [model.tput_timer.update_epoch_count](https://zhuanlan.zhihu.com/p/641675229)
 
+  [48] [torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html)
+
+  [49] [torch.nn.utils.rnn.pad_sequence](https://pytorch.org/docs/stable/generated/torch.nn.utils.rnn.pad_sequence.html#torch.nn.utils.rnn.pad_sequence)
+
+  [50] [torch.gather](https://pytorch.org/docs/stable/generated/torch.gather.html#torch.gather)
+
+  [51] [torch.clamp](https://pytorch.org/docs/stable/generated/torch.clamp.html#torch.clamp)
+
+  [52] [torch.nn.functional.pad](https://pytorch.org/docs/stable/generated/torch.nn.functional.pad.html#torch.nn.functional.pad)
+
+  [53] [itertools.chain](https://docs.python.org/zh-cn/3/library/itertools.html#itertools.chain)
+
+  [54] [transformers/quicktour#autotokenizer](https://huggingface.co/docs/transformers/quicktour#autotokenizer)
+
 </p></details>
