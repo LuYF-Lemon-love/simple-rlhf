@@ -97,7 +97,10 @@ Figure 1: The illustration of DeepSpeed Chat’s RLHF training pipeline with opt
 cd training/step3_rlhf_finetuning/
 
 # Run the training script
-bash training_scripts/opt/single_gpu/run_1.3b.sh
+bash training_scripts/opt/single_gpu/run_1.3b.sh ../step1_supervised_finetuning/output/ ../step2_reward_model_finetuning/output/
+
+# 运行 Tensorboard
+tensorboard --logdir=step3_tensorboard
 ```
 </p></details>
 
