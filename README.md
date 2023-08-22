@@ -13,7 +13,7 @@ Cuda compilation tools, release 12.0, V12.0.140
 Build cuda_12.0.r12.0/compiler.32267302_0
 ```
 
-切换 CUDA：
+torch 版本为 `2.0.1+cu118`，因此，安装的 CUDA 版本为 `11.8.0` ([官方下载链接](https://developer.nvidia.com/cuda-11-8-0-download-archive))，安装完成后修改 `.bashrc` 文件切换 CUDA：
 
 ```shell
 $ export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
@@ -146,5 +146,9 @@ $ source ~/.bashrc
   [53] [itertools.chain](https://docs.python.org/zh-cn/3/library/itertools.html#itertools.chain)
 
   [54] [transformers/quicktour#autotokenizer](https://huggingface.co/docs/transformers/quicktour#autotokenizer)
+
+  [55] [nvcc compile error reduction_utils.h(171) error: no operator "<" matches these operands FAILED: layer_norm.cuda.o](https://github.com/microsoft/DeepSpeedExamples/issues/402)
+
+  [56] [RuntimeError: Error building extension 'transformer_inference' in step3](https://github.com/microsoft/DeepSpeedExamples/issues/481)
 
 </p></details>
