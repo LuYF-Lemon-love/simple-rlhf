@@ -143,9 +143,14 @@ for prompt_batch in prompt_train_dataloader:
 ### 🐼 Serving: Plug-in your final model trained by DeepSpeed-Chat and test it out!
 For quickly testing your final models trained by DeepSpeed-Chat, we provide a simple script below. For users who want to use our trained models to create different LLM applications such as personal assistant, chatbot and code understanding, please refer to [LangChain](https://github.com/hwchase17/langchain).
 
+请首先修改本地模型的 `PATH-to-your-actor-model/config.json` 文件的 `"_name_or_path"` 为 `"facebook/opt-1.3b"`。
+
 ```bash
 # serve the final model
 python chat.py --path  ${PATH-to-your-actor-model}
+
+# example
+python chat.py --path training/step3_rlhf_finetuning/output/actor/
 ```
 ***Example 1: Q&A Session from serving a 1.3B final model trained from DeepSpeed-Chat***
 

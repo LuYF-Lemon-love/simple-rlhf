@@ -151,4 +151,8 @@ $ source ~/.bashrc
 
   [56] [RuntimeError: Error building extension 'transformer_inference' in step3](https://github.com/microsoft/DeepSpeedExamples/issues/481)
 
+  [57] [DeepSpeed-Chat cannot load models from local file?](https://github.com/microsoft/DeepSpeedExamples/issues/511)
+
+  [58] [how to refer the trained model by deepSpeed?](https://github.com/microsoft/DeepSpeedExamples/issues/351)
+
 </p></details>
