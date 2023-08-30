@@ -13,7 +13,7 @@ build/
 develop-eggs/
 dist/
 downloads/
-applications/DeepSpeed-Chat/data
+applications/chatgpt/data
 eggs/
 .eggs/
 lib/
@@ -131,11 +131,11 @@ dmypy.json
 .pyre/
 
 # added by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
-DeepSpeed-Chat/rm-static
-DeepSpeed-Chat/opt-350m
-DeepSpeed-Chat/opt-1.3b
-DeepSpeed-Chat/output
-DeepSpeed-Chat/training/step1_supervised_finetuning/output
-DeepSpeed-Chat/training/step2_reward_model_finetuning/output
-DeepSpeed-Chat/training/step3_rlhf_finetuning/output
-DeepSpeed-Chat/training/step3_rlhf_finetuning/step3_tensorboard
+chatgpt/rm-static
+chatgpt/opt-350m
+chatgpt/opt-1.3b
+chatgpt/output
+chatgpt/training/step1_supervised_finetuning/output
+chatgpt/training/step2_reward_model_finetuning/output
+chatgpt/training/step3_rlhf_finetuning/output
+chatgpt/training/step3_rlhf_finetuning/step3_tensorboard
