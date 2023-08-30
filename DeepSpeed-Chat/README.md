@@ -106,12 +106,12 @@ tensorboard --logdir=step3_tensorboard
 
 
 ### 🐼 Adding and using your own datasets in DeepSpeed-Chat
-In addition to the datasets used in our example scripts, you can also add and use your own datasets. To do so, first you need to add a new Class in [training/utils/data/raw_datasets.py](https://github.com/microsoft/DeepSpeedExamples/blob/master/applications/DeepSpeed-Chat/training/utils/data/raw_datasets.py) to define the format when using your data. You need to make sure to follow the APIs and format defined in the PromptRawDataset class to ensure a consistent data format that DeepSpeed-Chat relies on. You can look at the existing classes to learn how to do so.
 
-Second, you need to add an if condition in function get_raw_dataset in [training/utils/data/data_utils.py](https://github.com/microsoft/DeepSpeedExamples/blob/master/applications/DeepSpeed-Chat/training/utils/data/data_utils.py) corresponding to your new dataset. The dataset_name string in the if condition should be the dataset name you will provide as a arg for the training scripts. Last, you need to add your new dataset's dataset_name into your "--data_path" arg in your training scripts.  
-If you have downloaded huggingface datasets manually, you can add your local path into "--data_path", such as "--data_path ./relative/Dahoas/rm-static" and "--data_path /absolute/Dahoas/rm-static". Remeber you should not make `data/` in your local path, it may cause an exception to `load_dataset`.
+首先需要在 [training/utils/data/raw_datasets.py](./training/utils/data/raw_datasets.py) 中添加一个新类，以定义使用数据时的格式。您需要确保遵循`PromptRawDataset` 类中定义的API和格式，以确保 `DeepSpeed Chat` 所依赖的数据格式一致。
 
-One thing to note that some datasets may only have one response instead of two responses. For those datasets, you can only use them in step 1. And in such case, you should add the dataset_name as part of the "--sft_only_data_path" arg instead of the "--data_path" arg. One thing to note is that: If you plan to only do step 1 SFT, adding more single-response datasets is definitely beneficial. However, if you do plan to do steps 2 and 3, then adding too many single-response datasets during SFT could backfire: these data could be different from the data used for steps 2/3, generating different distributions which could cause training instability/worse model quality during step 2/3. That is part of the reason why we focused on trying the datasets with two responses and the preference, and always split a dataset into all 3 steps.
+其次，您需要在 [training/utils/data/data_utils.py](./training/utils/data/data_utils.py) 中的函数 `get_raw_dataset` 中添加与新数据集相对应的if条件。if条件中的 `dataset_name` 字符串应该是将作为训练脚本的参数提供的数据集名称。
+
+最后，您需要将新数据集的 `dataset_name` 添加到训练脚本中的 `“--data_path”` 参数中。
 
 If you have your own dataset in local files, you can also use it by following these rules:
 * Pass "local/jsonfile" as the dataset name to the "--data_path" argument.
