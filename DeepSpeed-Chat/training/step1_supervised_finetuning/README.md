@@ -15,7 +15,11 @@
 评估脚本为 `bash evaluation_scripts/run_prompt.sh`。需要提供两个模型的路径：(a) 原始的预训练模型 (i.e., --model_name_or_path_baseline facebook/opt-1.3b) 和 (b) 微调后的模型 (i.e., --model_name_or_path_finetune output/check_base)。
 
 ## 💁 Models and Datasets
-Since there is no opensource checkpoint for GPT3, we utilized the Meta OPT family pretrained models (i.e., facebook/opt-1.3b). One may also use other pretrained models (such as GPT-Neo, Bloom etc). As for the dataset, we also used those open-sourced datasets from to the Huggingface Datasets, namely
+
+模型: facebook/opt-1.3b
+
+数据集：
+
 ```text
 Dahoas/rm-static
 Dahoas/full-hh-rlhf
@@ -24,10 +28,7 @@ yitingxie/rlhf-reward-datasets
 openai/webgpt_comparisons stanfordnlp/SHP
 ```
 
-Thanks to the DeepSpeed RLHF data abstraction and blending techniques, we are now able to combine multiple sources of data for training. However, it is important to note that different datasets may use different prompt words (e.g., *Dohas/rm-static* uses "Human:" for queries and "Assistant:" for answers). Therefore, users must align these prompts by themselves. In our example, we use the format from *Dohas/rm-static* consistently. Through our evaluation, we have found that incorporating diverse datasets can improve the quality of the model. Please refer to the next section for examples of different query-answer pairs.
-
 ## ☀️ Prompt examples from OPT-1.3B and its SFT variants with different finetuning data
-Note that the following generation on use the default generation from the model.
 
 |         Promt         | Human: Please tell me about Microsoft in a few sentence? Assistant:                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | :-------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -44,7 +45,6 @@ Note that the following generation on use the default generation from the model.
 | Finetune w/ 6 datasets | A wise frog lives in a pond. He has a big mouth and a big heart.<br />He's always there to help.   He's a good friend to all.   He's a wise frog.`<\|endoftext\|>`                                                                                                                                                                         |
 
 ## ☀️ Some arguments explanation and the largest trainable model
-Most of the arguments used in the main.py file have clear explanations and are usually easy to follow if you have previous experience with finetuning decoder models. However, if you're not clear on any of them, please don't hesitate to reach out on GitHub issues. In this section, we provide some specific explanations of the arguments and their usage.
 
 | Args                                                     | Explanation                                                                              | Note                                                                                                                                                                                       |
 |----------------------------------------------------------|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ Most of the arguments used in the main.py file have clear explanations and are u
 | --only_optimize_lora                                     | Freeze all othre paramters and only optimize LoRA-related prameters                      |                                                                                                                                                                                            |
 | --gradient_checkpoint,   --lora_dim, only_optimize_lora | When LoRA and Gradient Checkpointing are enabled. Only Optimize LoRA   cannot be enabled | If all three are enabled, it will affect the gradient flow (aka the   augo-grad system backend by PyTorch)                                                                                 |
 
-One important consideration for users is determining the maximum model size they can train using their current system. Here, we present a method for estimating this limit. Assuming that you do not use the offload feature and enable (i) zero stage 3 (if using multiple GPUs), (ii) gradient checkpoint, and (iii) LoRA, the approximate maximum model size (in billions of parameters) that you can train can be estimated as "Total GPU memory in GB divided by 3." For example, if you have a single A6000-48G GPU, you can probably train models up to 16 billion parameters. It is important to note that this is a rough estimation, and you should verify it by yourselves.
+One important consideration for users is determining the maximum model size they can train using their current system. Here, we present a method for estimating this limit. Assuming that you do not use the offload feature and enable (i) zero stage 3 (if using multiple GPUs), (ii) gradient checkpoint, and (iii) LoRA, the approximate maximum model size (in billions of parameters) that you can train can be estimated as **"Total GPU memory in GB divided by 3."** For example, if you have a single A6000-48G GPU, you can probably train models up to 16 billion parameters. It is important to note that this is a rough estimation, and you should verify it by yourselves.
 
 ## 👀  Others
 
