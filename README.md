@@ -261,7 +261,7 @@ python chat.py --path training/step3_rlhf_finetuning/output/actor/
   
   [17] [shell脚本语言(超全超详细)](https://blog.csdn.net/weixin_43288201/article/details/105643692)
   
-  [18] [www.deepspeed.ai/getting-started/](https://www.deepspeed.ai/getting-started/)
+  [18] DeepSpeed: [Getting Started](https://www.deepspeed.ai/getting-started/), [Megatron-LM GPT2](https://www.deepspeed.ai/tutorials/megatron/), [Zero Redundancy Optimizer](https://www.deepspeed.ai/tutorials/zero/), [ZeRO Optimizations for FP16 Training](https://www.deepspeed.ai/docs/config-json/#zero-optimizations-for-fp16-training)
   
   [19] [deepspeed.add_config_arguments](https://deepspeed.readthedocs.io/en/latest/initialize.html#deepspeed.add_config_arguments)
   
