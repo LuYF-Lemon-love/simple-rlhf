@@ -132,8 +132,11 @@ dmypy.json
 
 # added by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
 chatgpt/rm-static
+chatgpt/Zhihu-KOL
+chatgpt/HC3-Chinese
 chatgpt/opt-350m
 chatgpt/opt-1.3b
+chatgpt/bloom-1b1
 chatgpt/output
 chatgpt/training/step1_supervised_finetuning/output
 chatgpt/training/step2_reward_model_finetuning/output

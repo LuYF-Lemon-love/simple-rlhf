@@ -27,9 +27,19 @@ $ source ~/.bashrc
 
 [2] [facebook/opt-350m](https://huggingface.co/facebook/opt-350m)
 
+[3] [bigscience/bloom-1b1](https://huggingface.co/bigscience/bloom-1b1)
+
 ## 数据
 
+### 英文
+
 [1] [Dahoas/rm-static](https://huggingface.co/datasets/Dahoas/rm-static)
+
+### 中文
+
+[1] [wangrui6/Zhihu-KOL](https://huggingface.co/datasets/wangrui6/Zhihu-KOL)
+
+[2] [Hello-SimpleAI/HC3-Chinese](https://huggingface.co/datasets/Hello-SimpleAI/HC3-Chinese)
 
 ## 参考
 
