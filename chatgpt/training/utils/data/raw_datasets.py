@@ -79,7 +79,7 @@ class DahoasRmstaticDataset(PromptRawDataset):
         return sample['prompt'] + sample['rejected']
 
 # Chinese dataset
-class DahoasRmstaticDataset(PromptRawDataset):
+class ZHDahoasRmstaticDataset(PromptRawDataset):
 
     def __init__(self, output_path, seed, local_rank, dataset_name):
         super().__init__(output_path, seed, local_rank, dataset_name)
