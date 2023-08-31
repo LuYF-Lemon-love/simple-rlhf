@@ -58,18 +58,6 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
     elif "mkqa-Chinese" in dataset_name:
         return raw_datasets.MkqaChineseDataset(output_path, seed, local_rank,
                                                "mkqa")
-    elif "mkqa-Japanese" in dataset_name:
-        return raw_datasets.MkqaJapaneseDataset(output_path, seed, local_rank,
-                                                "mkqa")
-    elif "Cohere/miracl-ja-queries-22-12" in dataset_name:
-        return raw_datasets.CohereMiracljaqueries2212Dataset(
-            output_path, seed, local_rank, dataset_name)
-    elif "lmqg/qg_jaquad" in dataset_name:
-        return raw_datasets.LmqgQgjaquadDataset(output_path, seed, local_rank,
-                                                dataset_name)
-    elif "lmqg/qag_jaquad" in dataset_name:
-        return raw_datasets.LmqgQagjaquadDataset(output_path, seed, local_rank,
-                                                 dataset_name)
     elif "local/jsonfile" in dataset_name:
         chat_path = os.path.abspath(
             os.path.join(os.path.dirname(__file__), os.path.pardir,
