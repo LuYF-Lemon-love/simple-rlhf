@@ -37,10 +37,12 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
     elif "yitingxie/rlhf-reward-datasets" in dataset_name:
         return raw_datasets.YitingxieRlhfrewarddatasetsDataset(
             output_path, seed, local_rank, dataset_name)
-    elif "wangrui6/Zhihu-KOL" in dataset_name:
+    # elif "wangrui6/Zhihu-KOL" in dataset_name:
+    elif "Zhihu-KOL" in dataset_name:
         return raw_datasets.Wangrui6ZhihuKOLDataset(output_path, seed,
                                                     local_rank, dataset_name)
-    elif "Hello-SimpleAI/HC3-Chinese" in dataset_name:
+    # elif "Hello-SimpleAI/HC3-Chinese" in dataset_name:
+    elif "HC3-Chinese" in dataset_name:
         return raw_datasets.HelloSimpleAIHC3ChineseDataset(
             output_path, seed, local_rank, dataset_name)
     elif "local/jsonfile" in dataset_name:

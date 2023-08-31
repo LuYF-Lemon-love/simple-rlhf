@@ -165,4 +165,6 @@ $ source ~/.bashrc
 
   [58] [how to refer the trained model by deepSpeed?](https://github.com/microsoft/DeepSpeedExamples/issues/351)
 
+  [59] [Error for run_chinese.sh of step1, other_language](https://github.com/microsoft/DeepSpeedExamples/issues/507)
+
 </p></details>

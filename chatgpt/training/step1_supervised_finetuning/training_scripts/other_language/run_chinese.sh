@@ -17,15 +17,13 @@ if [ "$ZERO_STAGE" == "" ]; then
 fi
 mkdir -p $OUTPUT
 
-# The Chinese data we found mostly only contain one response without another
-# "rejected" response. Thus we only test the step 1 finetuning and use
-# a data_split of 10,0,0 (keep all data for step 1).
-deepspeed main.py \
-   --data_path wangrui6/Zhihu-KOL Hello-SimpleAI/HC3-Chinese \
+# --data_path ../../Zhihu-KOL ../../HC3-Chinese \
+deepspeed --num_gpus 2 main.py \
+   --data_path ../../HC3-Chinese \
    --data_split 10,0,0 \
-   --model_name_or_path bigscience/bloom-1b1 \
-   --per_device_train_batch_size 8 \
-   --per_device_eval_batch_size 8 \
+   --model_name_or_path ../../bloom-1b1 \
+   --per_device_train_batch_size 4 \
+   --per_device_eval_batch_size 4 \
    --max_seq_len 512 \
    --learning_rate 9.65e-6 \
    --weight_decay 0. \
