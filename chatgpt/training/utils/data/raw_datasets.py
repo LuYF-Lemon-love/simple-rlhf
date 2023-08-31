@@ -333,39 +333,6 @@ class Wangrui6ZhihuKOLDataset(PromptRawDataset):
         )
         return None
 
-
-# Chinese dataset
-class CohereMiraclzhqueries2212Dataset(PromptRawDataset):
-
-    def __init__(self, output_path, seed, local_rank, dataset_name):
-        super().__init__(output_path, seed, local_rank, dataset_name)
-        self.dataset_name = "Cohere/miracl-zh-queries-22-12"
-        self.dataset_name_clean = "Cohere_miracl_zh_queries_22_12"
-
-    def get_train_data(self):
-        return self.raw_datasets["train"]
-
-    def get_eval_data(self):
-        return self.raw_datasets["dev"]
-
-    def get_prompt(self, sample):
-        return " Human: " + sample['query'] + " Assistant:"
-
-    def get_chosen(self, sample):
-        return " " + sample['positive_passages'][0]['text']
-
-    def get_rejected(self, sample):
-        return " " + sample['negative_passages'][0]['text']
-
-    def get_prompt_and_chosen(self, sample):
-        return " Human: " + sample['query'] + " Assistant: " + sample[
-            'positive_passages'][0]['text']
-
-    def get_prompt_and_rejected(self, sample):
-        return " Human: " + sample['query'] + " Assistant: " + sample[
-            'negative_passages'][0]['text']
-
-
 # Chinese dataset
 class HelloSimpleAIHC3ChineseDataset(PromptRawDataset):
 

@@ -43,9 +43,6 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
     elif "wangrui6/Zhihu-KOL" in dataset_name:
         return raw_datasets.Wangrui6ZhihuKOLDataset(output_path, seed,
                                                     local_rank, dataset_name)
-    elif "Cohere/miracl-zh-queries-22-12" in dataset_name:
-        return raw_datasets.CohereMiraclzhqueries2212Dataset(
-            output_path, seed, local_rank, dataset_name)
     elif "Hello-SimpleAI/HC3-Chinese" in dataset_name:
         return raw_datasets.HelloSimpleAIHC3ChineseDataset(
             output_path, seed, local_rank, dataset_name)
