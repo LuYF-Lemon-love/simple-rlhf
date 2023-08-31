@@ -31,9 +31,13 @@ $ source ~/.bashrc
 
 ## 数据
 
-### 英文
+### 英文比较数据
 
 [1] [Dahoas/rm-static](https://huggingface.co/datasets/Dahoas/rm-static)
+
+### 中文比较数据
+
+[1] [zwh9029/rm-static-m2m100-zh-jianti](https://huggingface.co/datasets/zwh9029/rm-static-m2m100-zh-jianti)
 
 ### 中文
 
