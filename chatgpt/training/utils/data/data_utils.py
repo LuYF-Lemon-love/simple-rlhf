@@ -49,9 +49,6 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
     elif "Hello-SimpleAI/HC3-Chinese" in dataset_name:
         return raw_datasets.HelloSimpleAIHC3ChineseDataset(
             output_path, seed, local_rank, dataset_name)
-    elif "mkqa-Chinese" in dataset_name:
-        return raw_datasets.MkqaChineseDataset(output_path, seed, local_rank,
-                                               "mkqa")
     elif "local/jsonfile" in dataset_name:
         chat_path = os.path.abspath(
             os.path.join(os.path.dirname(__file__), os.path.pardir,
