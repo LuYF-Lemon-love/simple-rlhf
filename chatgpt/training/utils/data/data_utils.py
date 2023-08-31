@@ -37,12 +37,6 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
     elif "yitingxie/rlhf-reward-datasets" in dataset_name:
         return raw_datasets.YitingxieRlhfrewarddatasetsDataset(
             output_path, seed, local_rank, dataset_name)
-    elif "openai/webgpt_comparisons" in dataset_name:
-        return raw_datasets.OpenaiWebgptcomparisonsDataset(
-            output_path, seed, local_rank, dataset_name)
-    elif "stanfordnlp/SHP" in dataset_name:
-        return raw_datasets.StanfordnlpSHPDataset(output_path, seed,
-                                                  local_rank, dataset_name)
     elif "pvduy/sharegpt_alpaca_oa_vicuna_format" in dataset_name:
         return raw_datasets.PvduySharegptalpacaoavicunaformatDataset(
             output_path, seed, local_rank, dataset_name)
