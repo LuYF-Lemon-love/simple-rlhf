@@ -1,11 +1,14 @@
-# Copyright (c) Microsoft Corporation.
-# SPDX-License-Identifier: Apache-2.0
+# coding:utf-8
+#
+# DeepSpeed-Chat/training/step1_supervised_finetuning/main.py
+#
+# git pull from DeepSpeed-Chat by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 19, 2023
+# updated by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 31, 2023
+#
+# 数据集类.
 
-# DeepSpeed Team
 from datasets import load_dataset
 from torch.utils.data import Subset
-import re
-
 
 # The template prompt dataset class that all new dataset porting needs to
 # follow in order to have a unified API and unified data format.
@@ -75,6 +78,34 @@ class DahoasRmstaticDataset(PromptRawDataset):
     def get_prompt_and_rejected(self, sample):
         return sample['prompt'] + sample['rejected']
 
+# Chinese dataset
+class DahoasRmstaticDataset(PromptRawDataset):
+
+    def __init__(self, output_path, seed, local_rank, dataset_name):
+        super().__init__(output_path, seed, local_rank, dataset_name)
+        self.dataset_name = "zwh9029/rm-static-m2m100-zh-jianti"
+        self.dataset_name_clean = "zwh9029_rm_static_m2m100_zh_jianti"
+
+    def get_train_data(self):
+        return self.raw_datasets["train"]
+
+    def get_eval_data(self):
+        return self.raw_datasets["test"]
+
+    def get_prompt(self, sample):
+        return sample['prompt']
+
+    def get_chosen(self, sample):
+        return sample['chosen']
+
+    def get_rejected(self, sample):
+        return sample['rejected']
+
+    def get_prompt_and_chosen(self, sample):
+        return sample['prompt'] + sample['chosen']
+
+    def get_prompt_and_rejected(self, sample):
+        return sample['prompt'] + sample['rejected']
 
 # English dataset
 class DahoasFullhhrlhfDataset(PromptRawDataset):
