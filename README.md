@@ -101,7 +101,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 cd training/step1_supervised_finetuning/
 
 # Run the training script
-bash training_scripts/other_language/run_chinese.sh
+bash training_scripts/zh/run_chinese.sh
 
 # Evaluate the model
 bash evaluation_scripts/run_prompt.sh
