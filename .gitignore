@@ -131,6 +131,7 @@ dmypy.json
 .pyre/
 
 # added by LuYF-Lemon-love <luyanfeng_nlp@qq.com> on August 20, 2023
+temp/
 chatgpt/rm-static
 chatgpt/rm-static-zh
 chatgpt/Zhihu-KOL
