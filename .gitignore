@@ -143,4 +143,5 @@ chatgpt/output
 chatgpt/training/step1_supervised_finetuning/output
 chatgpt/training/step2_reward_model_finetuning/output
 chatgpt/training/step3_rlhf_finetuning/output
+chatgpt/training/step1_supervised_finetuning/step1_tensorboard
 chatgpt/training/step3_rlhf_finetuning/step3_tensorboard

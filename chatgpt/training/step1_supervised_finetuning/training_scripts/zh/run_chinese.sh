@@ -17,7 +17,7 @@ if [ "$ZERO_STAGE" == "" ]; then
 fi
 mkdir -p $OUTPUT
 
-deepspeed --num_gpus 1 main.py \
+deepspeed --num_gpus 2 main.py \
    --model_name_or_path ../../bloom-1b1 \
    --data_path ../../rm-static-zh \
    --per_device_train_batch_size 4 \
@@ -26,7 +26,6 @@ deepspeed --num_gpus 1 main.py \
    --num_train_epochs 1 \
    --zero_stage $ZERO_STAGE \
    --enable_tensorboard \
-   --tensorboard_path $OUTPUT \
    --deepspeed \
    --output_dir $OUTPUT \
    &> $OUTPUT/training.log

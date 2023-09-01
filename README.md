@@ -103,6 +103,9 @@ cd training/step1_supervised_finetuning/
 # Run the training script
 bash training_scripts/zh/run_chinese.sh
 
+# 运行 Tensorboard
+tensorboard --logdir=step1_tensorboard
+
 # Evaluate the model
 bash evaluation_scripts/run_prompt.sh
 ```
