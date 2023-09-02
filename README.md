@@ -266,7 +266,7 @@ python chat.py --path training/step3_rlhf_finetuning/output/actor/
   
   [17] [shell脚本语言(超全超详细)](https://blog.csdn.net/weixin_43288201/article/details/105643692)
   
-  [18] DeepSpeed: [Getting Started](https://www.deepspeed.ai/getting-started/), [Megatron-LM GPT2](https://www.deepspeed.ai/tutorials/megatron/), [Zero Redundancy Optimizer](https://www.deepspeed.ai/tutorials/zero/), [ZeRO Optimizations for FP16 Training](https://www.deepspeed.ai/docs/config-json/#zero-optimizations-for-fp16-training)
+  [18] DeepSpeed: [Getting Started](https://www.deepspeed.ai/getting-started/), [Megatron-LM GPT2](https://www.deepspeed.ai/tutorials/megatron/), [Zero Redundancy Optimizer](https://www.deepspeed.ai/tutorials/zero/), [ZeRO Optimizations for FP16 Training](https://www.deepspeed.ai/docs/config-json/#zero-optimizations-for-fp16-training), [DeepSpeed Configuration JSON](https://www.deepspeed.ai/docs/config-json/)
   
   [19] [deepspeed.add_config_arguments](https://deepspeed.readthedocs.io/en/latest/initialize.html#deepspeed.add_config_arguments)
   
@@ -353,5 +353,7 @@ python chat.py --path training/step3_rlhf_finetuning/output/actor/
   [58] [how to refer the trained model by deepSpeed?](https://github.com/microsoft/DeepSpeedExamples/issues/351)
 
   [59] [Error for run_chinese.sh of step1, other_language](https://github.com/microsoft/DeepSpeedExamples/issues/507)
+
+  [60] [torch.distributed.barrier](https://pytorch.org/docs/stable/distributed.html#torch.distributed.barrier)
 
 </p></details>
