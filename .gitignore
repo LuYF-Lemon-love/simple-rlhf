@@ -140,6 +140,7 @@ chatgpt/opt-350m
 chatgpt/opt-1.3b
 chatgpt/bloom-1b1
 chatgpt/bloom-1b4-zh
+chatgpt/Wenzhong2.0-GPT2-3.5B-chinese
 chatgpt/output
 chatgpt/training/step1_supervised_finetuning/output
 chatgpt/training/step2_reward_model_finetuning/output
