@@ -29,6 +29,8 @@ $ source ~/.bashrc
 
 [3] [bigscience/bloom-1b1](https://huggingface.co/bigscience/bloom-1b1)
 
+[4] [Langboat/bloom-1b4-zh](https://huggingface.co/Langboat/bloom-1b4-zh)
+
 ## 数据
 
 ### 英文比较数据
