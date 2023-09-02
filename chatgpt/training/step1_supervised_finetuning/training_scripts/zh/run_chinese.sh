@@ -18,7 +18,7 @@ fi
 mkdir -p $OUTPUT
 
 deepspeed --num_gpus 2 main.py \
-   --model_name_or_path ../../bloom-1b1 \
+   --model_name_or_path ../../bloom-1b4-zh \
    --data_path ../../rm-static-zh \
    --per_device_train_batch_size 4 \
    --per_device_eval_batch_size 4 \
