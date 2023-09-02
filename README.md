@@ -356,4 +356,6 @@ python chat.py --path training/step3_rlhf_finetuning/output/actor/
 
   [60] [torch.distributed.barrier](https://pytorch.org/docs/stable/distributed.html#torch.distributed.barrier)
 
+  [61] [step1-sft use lora failed](https://github.com/microsoft/DeepSpeedExamples/issues/299)
+
 </p></details>
