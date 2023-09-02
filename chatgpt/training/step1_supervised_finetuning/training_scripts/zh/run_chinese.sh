@@ -18,12 +18,16 @@ fi
 mkdir -p $OUTPUT
 
 deepspeed --num_gpus 2 main.py \
-   --model_name_or_path ../../bloom-1b4-zh \
+   --model_name_or_path ../../bloom-1b1 \
    --data_path ../../rm-static-zh \
    --per_device_train_batch_size 4 \
    --per_device_eval_batch_size 4 \
    --gradient_accumulation_steps 8 \
+   --lora_dim 8 \
+   --lora_module_name h. \
+   --only_optimize_lora \
    --num_train_epochs 1 \
+   --gradient_checkpointing \
    --zero_stage $ZERO_STAGE \
    --enable_tensorboard \
    --deepspeed \
