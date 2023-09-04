@@ -33,6 +33,8 @@ $ source ~/.bashrc
 
 [5] [IDEA-CCNL/Wenzhong2.0-GPT2-3.5B-chinese](https://huggingface.co/IDEA-CCNL/Wenzhong2.0-GPT2-3.5B-chinese)
 
+[6] [FlagAlpha/Atom-7B](https://huggingface.co/FlagAlpha/Atom-7B)
+
 ## 数据
 
 ### 英文比较数据
