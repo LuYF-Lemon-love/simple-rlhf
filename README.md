@@ -27,13 +27,13 @@ $ source ~/.bashrc
 
 [2] [facebook/opt-350m](https://huggingface.co/facebook/opt-350m)
 
-[3] [bigscience/bloom-1b1](https://huggingface.co/bigscience/bloom-1b1)
+[3] [bigscience/bloom-1b1](https://huggingface.co/bigscience/bloom-1b1)，词表原因显存消耗太大，且中文效果不好。
 
-[4] [Langboat/bloom-1b4-zh](https://huggingface.co/Langboat/bloom-1b4-zh)
+[4] [Langboat/bloom-1b4-zh](https://huggingface.co/Langboat/bloom-1b4-zh)，中文效果不好。
 
-[5] [IDEA-CCNL/Wenzhong2.0-GPT2-3.5B-chinese](https://huggingface.co/IDEA-CCNL/Wenzhong2.0-GPT2-3.5B-chinese)
+[5] [IDEA-CCNL/Wenzhong2.0-GPT2-3.5B-chinese](https://huggingface.co/IDEA-CCNL/Wenzhong2.0-GPT2-3.5B-chinese)，无法成功导入模型进行训练。
 
-[6] [FlagAlpha/Atom-7B](https://huggingface.co/FlagAlpha/Atom-7B)
+[6] [FlagAlpha/Atom-7B](https://huggingface.co/FlagAlpha/Atom-7B)，zero_stage=3时，官方实现的 `save_zero_three_model` 函数无法成功保存模型。
 
 ## 数据
 
